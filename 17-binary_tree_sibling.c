@@ -2,7 +2,7 @@
 
 /**
 * binary_tree_sibling - function thet finds if a node is sibling
-* @nodeL node to check
+* @node node to check
 * Return: the sibling node
 */
 

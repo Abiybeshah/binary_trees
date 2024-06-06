@@ -17,7 +17,7 @@ int perfect_tree(const binary_tree_t *tree)
 		r = perfect_tree(tree->right);
 		if (r == k && r != 0 && k != 0)
 			return (r);
-		return (0);
+		return (1);
 	}
 	else if (!tree->left && !tree->right)
 	{
