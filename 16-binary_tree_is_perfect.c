@@ -13,8 +13,8 @@ int perfect_tree(const binary_tree_t *tree)
 
 	if (tree->left && tree->right)
 	{
-		k = perfect_tree(tree->left);
-		r = perfect_tree(tree->right);
+		k = 1 + perfect_tree(tree->left);
+		r = 1 + perfect_tree(tree->right);
 		if (r == k && r != 0 && k != 0)
 			return (r);
 		return (0);
